@@ -1,0 +1,168 @@
+/* @import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+/* Обнулення */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+img{
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+html,
+body{
+	height: 100%;
+}
+body {
+	line-height: 1;
+
+}
+
+/* Шрифт */
+/* @font-face {
+	font-family: "";
+	src: url("../fonts/") format("woff2"), url("../fonts/") format("woff");
+	font-display: ;
+	font-weight: ;
+	font-style: ;
+	}
+  */
+
+/* -- */
+/* transition: all 0.3s ease 0s; */
+/* -- */
+/* 
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main{
+	flex-grow: 1;
+}
+ */
+body{
+font-family: "Lato";
+/* пишемо те що саме більше використовується (шрифт,колір) крім звичайних font-size 16px */
+color: black;
+}
+
+/* ======================= */
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main{
+	flex-grow: 1;
+}
+/* ====================== */
+/* Обмежуючий контейнер */
+[class*="__container"]{
+	/* +30px тому що padding 15 15 */
+	max-width: 1275px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/* --------------- */
+.page {
+	padding-bottom: 35px;
+	padding-top: 25px;
+	background-color: rgb(200, 177, 177);
+}
+
+
+.domashka img{
+	margin-bottom: 25px;
+}
+.domashka {
+	display: inline-block;
+}
+
+.domashka._active .domashka__form {
+	display: block;
+}
+
+.domashka._active .domashka__text span:first-child {
+	display: none;
+}
+.domashka._active .domashka__text span:last-child {
+	display: block;
+}
+
+.domashka__text span:first-child {
+	display: block;
+}
+.domashka__text span:last-child {
+	display: none;
+}
+
+.domashka__content{
+	display: flex;
+	margin-bottom: 15px;
+}
+.domashka__icon{
+height: 30px;
+width: 30px;
+}
+.domashka__icon :hover{
+}
+.domashka__text{
+	margin-left: 10px;
+	font-size: 24px;
+}
+
+.domashka__form {
+	background-color: #72687b;
+	padding: 5px;
+	border-radius: 10px
+}
+.domashka__input{
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+.domashka__form li:not(:last-child) {
+	margin: 0px 0px 15px 0px;
+}
+.text__counter span{
+	font-size: 14px;
+	font-weight: 700;
+	color: burlywood;
+}
